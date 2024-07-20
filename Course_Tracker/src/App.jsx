@@ -1,14 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainPage from "./components/MainPage.jsx";
+//Route components in here
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>Hello World!</div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
