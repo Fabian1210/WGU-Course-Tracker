@@ -1,31 +1,28 @@
 import React from "react";
-import styles from "./MainPage.module.css";
+import "./MainPage.css";
 
 export default function MainPage() {
   return (
     <>
-      <div className={styles.content}>
-        <div className={styles.header}>
-          <h1>Western Governors University Course Tracker</h1>
-        </div>
-        <div className={styles.input}>
-          <label htmlFor="name">
-            Name:
-            <input type="text" id="name" />
-          </label>
-          <label htmlFor="degree">
-            Degree Program:
-            {/* dropdown of degrees available? api? */}
-            <input type="text" id="degree" />
-          </label>
-          <label htmlFor="gradDate">
-            Anticipated Graduation Date:
-            <input type="month" id="gradDate" />
-          </label>
+      <form className="form">
+        <p class="title"> Western Governors University Course Tracker</p>
+        <label>
+          <input class="input" type="text" placeholder="" />
+          <span>Name</span>
+        </label>
 
-          <button className={styles.btn}>Next</button>
-        </div>
-      </div>
+        <label>
+          <input class="input" type="text" placeholder="" />
+          <span>Degree Program</span>
+        </label>
+        <label>
+          <input class="input" type="month" placeholder="" />
+          <span>Graduation Date</span>
+        </label>
+        {/* owl icon transition animation for button? 
+        on hover, highlight owl icon on button?*/}
+        <button class="btn">Next</button>
+      </form>
     </>
   );
 }
