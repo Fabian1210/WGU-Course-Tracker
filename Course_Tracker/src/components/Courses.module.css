@@ -1,11 +1,9 @@
 body {
   display: flex;
   justify-content: center;
-  align-content: center;
 }
-
 .content {
-  /* border: solid greenyellow; */
+  border: solid greenyellow;
   color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -16,12 +14,10 @@ body {
 }
 
 .titleText {
-  /* border: solid red; */
+  border: solid red;
   padding: 10px 10px 30px 10px;
   font-size: 36px;
 }
-
-/* button */
 
 .addBtn {
   min-width: 10px;
@@ -65,7 +61,7 @@ body {
   color: rgb(255, 255, 255, 1);
   transform: scale(1) translateY(-1px);
 
-  background: radial-gradient(ellipse at bottom, white 0%, green 45%);
+  background: radial-gradient(ellipse at bottom, white 0%, #113c74 45%);
 }
 
 .addBtn:hover::before {

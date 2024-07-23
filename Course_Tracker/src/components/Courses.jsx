@@ -6,6 +6,7 @@ export default function Courses() {
     <>
       <div className={styles.content}>
         <div className={styles.titleText}>Enter Courses</div>
+
         {/* inpout field and button */}
         <div>
           <input type="text" id="coursesInput" placeholder="Enter Course" />
