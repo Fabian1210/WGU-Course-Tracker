@@ -20,7 +20,7 @@ export default function MainPage() {
           </label>
           <label htmlFor="gradDate">
             Anticipated Graduation Date:
-            <input type="month" id="gradDAte" />
+            <input type="month" id="gradDate" />
           </label>
 
           <button className={styles.btn}>Next</button>
