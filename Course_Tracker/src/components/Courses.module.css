@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.content {
+  /* border: solid greenyellow; */
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  margin-top: 10%;
+}
+
+.titleText {
+  /* border: solid red; */
+  padding: 10px 10px 30px 10px;
+  font-size: 36px;
+}
+
+/* button */
+
+.addBtn {
+  min-width: 10px;
+  position: relative;
+  cursor: pointer;
+  padding: 4px 13px;
+  border: 0;
+  border-radius: 3px;
+  margin-left: 1px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  background: radial-gradient(
+    ellipse at bottom,
+    rgba(71, 81, 92, 1) 0%,
+    rgba(11, 21, 30, 1) 45%
+  );
+  color: white;
+  transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.addBtn::before {
+  content: "";
+  width: 70%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0.2;
+
+  transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.addBtn:hover {
+  color: rgb(255, 255, 255, 1);
+  transform: scale(1) translateY(-1px);
+
+  background: radial-gradient(ellipse at bottom, white 0%, green 45%);
+}
+
+.addBtn:hover::before {
+  opacity: 1;
+}
