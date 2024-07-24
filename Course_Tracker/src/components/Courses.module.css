@@ -3,6 +3,7 @@ body {
   justify-content: center;
 }
 .content {
+  /* box-sizing: border-box; */
   border: solid greenyellow;
   color: whitesmoke;
   display: flex;
@@ -10,12 +11,12 @@ body {
   justify-content: center;
   align-items: center;
   width: 50vw;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .titleText {
-  border: solid red;
-  padding: 10px 10px 30px 10px;
+  /* border: solid red;
+  padding: 10px 10px 30px 10px; */
   font-size: 36px;
 }
 

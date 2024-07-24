@@ -16,7 +16,7 @@ export default function MainPage() {
           <span>Degree Program</span>
         </label>
         <label>
-          <input class="input" type="month" placeholder="" />
+          <input class="input" type="text" placeholder="" />
           <span>Graduation Date</span>
         </label>
         {/* owl icon transition animation for button? 
