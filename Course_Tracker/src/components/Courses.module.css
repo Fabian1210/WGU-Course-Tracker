@@ -6,7 +6,9 @@ body {
   /* box-sizing: border-box; */
   border: solid greenyellow;
 
-  color: whitesmoke;
+  background-color: #1a1a1a;
+  color: #00bfff;
+  /* color: whitesmoke; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,6 +130,7 @@ li {
   text-wrap: wrap;
   overflow: hidden;
   background-color: #113c74;
+  color: whitesmoke;
 
   transition: background-color 0.3s, opacity 0.3s;
   position: relative;
