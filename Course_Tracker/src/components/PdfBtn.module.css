@@ -1,0 +1,133 @@
+.btn {
+  min-width: 10px;
+
+  position: relative;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-left: 1px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  background: radial-gradient(
+    ellipse at bottom,
+    rgba(71, 81, 92, 1) 0%,
+    rgba(11, 21, 30, 1) 45%
+  );
+  color: white;
+  transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.btn::before {
+  content: "";
+  width: 70%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0.2;
+
+  transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255, 1);
+  transform: scale(1) translateY(-1px);
+
+  background: radial-gradient(ellipse at bottom, white 0%, #113c74 45%);
+}
+
+.btn:hover::before {
+  opacity: 1;
+}
+
+.navigateBtns {
+  /* border: solid blue; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+#nvgBtn {
+  margin-bottom: 10px;
+  width: 30%;
+}
+
+/* #nextBtn {
+    padding: 8px 14px;
+    width: 30%;
+    border-radius: 6px;
+    align-self: center;
+  } */
+
+h2 {
+  /* border: solid green; */
+  margin-bottom: 0;
+  align-self: center;
+}
+
+/* ----- Course List ----- */
+
+ul {
+  border: solid yellow;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+  min-height: 100px;
+}
+
+li {
+  /* border: solid red; */
+  display: flex;
+
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 5px;
+  margin: 5px 5px;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 125px;
+
+  max-height: 30px;
+  /* max-width: 15px; */
+  /* text-wrap: wrap; */
+  text-align: center;
+  text-wrap: wrap;
+  overflow: hidden;
+  background-color: #113c74;
+  color: whitesmoke;
+
+  transition: background-color 0.3s, opacity 0.3s;
+  position: relative;
+}
+
+li::before {
+  content: "X";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 48px; /* Match the font size of li or adjust as needed */
+  opacity: 0; /* Hide by default */
+  transition: opacity 0.3s; /*Smooth transition for opacity*/
+}
+
+li:hover {
+  background-color: rgba(255, 0, 0, 0.3); /*Transparent red background*/
+}
+
+li:hover::before {
+  opacity: 60%; /* Show the "X" on hover */
+}

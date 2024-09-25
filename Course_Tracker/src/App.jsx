@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainPage from "./components/MainPage.jsx";
 import Courses from "./components/Courses.jsx";
-import ViewCourses from "./components/ViewCourses.jsx";
+import GeneratePDF from "./components/GeneratePDF.jsx";
 //Route components in here
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/courses" element={<Courses />} />
-          <Route path="/viewCourses" element={<ViewCourses />} />
+          <Route path="/generatePDF" element={<GeneratePDF />} />
         </Routes>
       </BrowserRouter>
     </>
