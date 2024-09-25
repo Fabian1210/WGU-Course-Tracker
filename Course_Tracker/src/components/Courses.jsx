@@ -27,6 +27,10 @@ export default function Courses() {
   //Navigation of Pages
   const navigate = useNavigate();
 
+  const goToViewCourses = () => {
+    navigate("/viewCourses");
+  };
+
   const goBack = () => {
     navigate(-1);
   };
@@ -59,7 +63,11 @@ export default function Courses() {
           <button className={styles.btn} id={styles.nvgBtn} onClick={goBack}>
             Back
           </button>
-          <button className={styles.btn} id={styles.nvgBtn}>
+          <button
+            className={styles.btn}
+            id={styles.nvgBtn}
+            onClick={goToViewCourses}
+          >
             Next
           </button>
         </div>
